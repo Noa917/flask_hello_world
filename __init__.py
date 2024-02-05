@@ -42,8 +42,6 @@ def ReadBDD():
     cursor.execute('SELECT * FROM clients;')
     data = cursor.fetchall()
     conn.close()
-    
-    # Rendre le template HTML et transmettre les données
     return render_template('read_data.html', data=data)
  
 if __name__ == "__main__":
