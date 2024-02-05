@@ -31,5 +31,9 @@ def meteo():
 def mongraphique():
     return render_template("graphique.html")
   
+  @app.route("/historigramme/")
+def mongraphique():
+    return render_template("historigramme.html")
+  
 if __name__ == "__main__":
   app.run(debug=True)
