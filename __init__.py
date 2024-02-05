@@ -33,7 +33,7 @@ def mongraphique():
   
   @app.route("/historigramme/")
 def historigramme():
-    return render_template("historigramme.html")
+    return render_template('historigramme.html')
   
 if __name__ == "__main__":
   app.run(debug=True)
