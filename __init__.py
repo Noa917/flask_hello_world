@@ -35,7 +35,7 @@ def mongraphique():
 def monhistoiregramme():
    return render_template('histoiregramme.html')
  
- @app.route('/consultation/')
+ @app.route("/consultation/")
 def ReadBDD():
     conn = sqlite3.connect('database.db')
     cursor = conn.cursor()
